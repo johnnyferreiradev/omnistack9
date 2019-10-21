@@ -9,7 +9,6 @@ module.exports = {
         booking.approved = true;
 
         await booking.save();
-        console.log('passou pelo save');
 
         const bookingUserSocket = req.connectedUsers[booking.user];
 
